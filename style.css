@@ -1,0 +1,101 @@
+body {
+  background: linear-gradient(to bottom right, #b3d1ff, #0d1a66);
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h2 {
+  font-family: 'Press Start 2P', cursive;
+  color: #e0f7ff;
+  text-shadow: 2px 2px 4px #0d1a66;
+}
+
+.card {
+  background: linear-gradient(145deg, #0d1a66, #1a2a8c);
+  border: 2px solid #66b3ff;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.5);
+}
+
+.fate-event {
+  background: linear-gradient(to right, #66b3ff, #99ccff);
+  color: #0d1a66;
+  border-radius: 12px;
+  padding: 6px 12px;
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-shadow: 1px 1px 2px #0002;
+}
+
+.creep {
+  color: #cce6ff; /* lebih terang */
+  font-weight: 700;
+  text-shadow: 1px 1px 2px #0002;
+}
+
+.white {
+  color: white;
+}
+
+.input-group-text {
+  width: 50px;
+  justify-content: center;
+  background: #1a2a8c;
+  color: #cce6ff; /* lebih terang */
+  font-weight: bold;
+  border: 2px solid #66b3ff;
+}
+
+.form-control {
+  background: #3355aa;
+  color: #e0f7ff; /* lebih terang */
+  border: 2px solid #66b3ff;
+}
+
+.input-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.input-flex > div {
+  flex: 1 1 calc(12.5% - 8px);
+  min-width: 100px;
+}
+
+@media (max-width: 768px) {
+  .input-flex > div {
+    flex: 1 1 calc(25% - 8px);
+  }
+}
+
+@media (max-width: 576px) {
+  .input-flex > div {
+    flex: 1 1 calc(50% - 8px);
+  }
+}
+
+button.btn-primary {
+  background: linear-gradient(to right, #66b3ff, #99ccff);
+  border: none;
+  font-weight: bold;
+  color: #0d1a66;
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 1px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
